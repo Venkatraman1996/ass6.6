@@ -1,0 +1,19 @@
+1. Explain the difference between FIFO and Capacity scheduler
+Fifo scheduler:
+The FIFO Scheduler places applications in a queue and runs them in the order of
+submission (first in, first out). a small file has to wait until the large file preceding it
+in the queue to execute first.
+Capacity scheduler:
+With the Capacity Scheduler, a separate dedicated queue allows the small job to
+start as soon as it is submitted. Large job finishes late when compared with using the FIFO
+Scheduler.
+==========================================================================================
+2. What are the limitations of hadoop 1.x and how they were overcome in hadoop 2.x:
+*In hadoop 1.x all the operations such as utilization and job monitoring are monitored by job
+tracker where as in 2.x this is handeled by splitting the task to resource manager,node manager
+and the application manager.
+*the number nodes that can be fit into the cluster has been scaled up from 4000 to 10000.
+*hadoop 2.x also support other processing models other than map reduce model
+*in hadoop 2.x resource allocation nis dyanamic
+
+==========================================================================================
